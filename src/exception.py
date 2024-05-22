@@ -1,5 +1,5 @@
 import sys 
-import logging
+from src.logger import logging
 
 # 建立一个错误显示错误运行的主要细节
 def error_message_detail(error, errror_detail:sys):
@@ -17,5 +17,7 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
+
+
 
 
